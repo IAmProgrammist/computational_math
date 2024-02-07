@@ -24,7 +24,7 @@ fn iter(numbers: &[f32], iterations: i32) {
 
 // замена итерации функцией
 // версия для одинарной точности c powf
-fn nonIter(numbers: &[f32], iterations: i32) {
+fn non_iter(numbers: &[f32], iterations: i32) {
     println!("Безытерационный метод: ");
     for &number in numbers {
         // извлекаем корень
@@ -57,5 +57,5 @@ fn main() {
     let iterations = 10; // число итераций
     
     iter(&numbers, iterations);
-    nonIter(&numbers, iterations)
+    non_iter(&numbers, iterations)
 }
